@@ -8,9 +8,31 @@ body {
 	margin: 0px;
 }
 
+p {
+	font-size: 16px;
+}
+
+.hero-text,
+p {
+	color: hsl(0, 36%, 70%);
+}
+
+.container {
+	border: 1px solid red;
+}
+
 .logo {
 	margin: 30px;
 	width: 21%;
+}
+
+.hero-mob {
+	max-width: 72%;
+}
+
+button {
+	padding: 10px;
+	border-radius: 30%;
 }
 
 /*Media Query*/
