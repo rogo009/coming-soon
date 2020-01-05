@@ -18,50 +18,42 @@
 </head>
 
 <body>
+      <img src="images/logo.svg" alt="base apparel logo" class="logo">
+    <div class="container">
+      <img src="images/hero-mobile.jpg" alt="main image" class="hero-mob">
+      <img src="images/hero-desktop.jpg" alt="main image" class="hero-desk">
+    <div class="container-text">  
+      <h1 class="hero-text">WE'RE</h1> 
+      <h1 class="tag-text">COMING SOON</h1>
+        <p class="tagline">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+    </div> <!-- container for text -->
 
-  <div class="container">
-  <div>
-    <img src="images/logo.svg" alt="base apparel logo" class="logo">
-  <div>
-    <img src="images/hero-mobile.jpg" alt="main image" class="hero-mob">
-  </div>
-  <div>
-    <img src="images/hero-desktop.jpg" alt="main image" class="hero-desk">
-  </div>  
+    <form id="form" action="#" method="GET"> <!-- default values but to be explicit -->
+  <!--     <div>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text"> adding 'required' after type means browser handles empty inputs for you, no need for JS to validate, works in this case as you are checking for a single condition, but if checking multiple conditions this would not work
+      </div> -->
 
-  <h1 class="hero-text">WE'RE</h1> 
-  <h1 class="tag-text">COMING SOON</h1>
+      <!-- <div>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password">
+      </div>
 
-  <p class="tagline">Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.</p>
-</div>
+      <button type="submit">Submit</button>
+  -->
+      <div class="email">
+        <input id="email" name="email" type="text" placeholder="Email Address">
+      </div>
+      
+      <div>
+        <!-- <img src="images/icon-arrow.svg alt="arrow"> not working-->
+        <button type="submit" id="submit">submit</button>
+      </div>
+    </form>
 
-  <form id="form" action="#" method="GET"> <!-- default values but to be explicit -->
-<!--     <div>
-      <label for="name">Name</label>
-      <input id="name" name="name" type="text"> adding 'required' after type means browser handles empty inputs for you, no need for JS to validate, works in this case as you are checking for a single condition, but if checking multiple conditions this would not work
-    </div> -->
-
-    <!-- <div>
-      <label for="password">Password</label>
-      <input id="password" name="password" type="password">
-    </div>
-
-    <button type="submit">Submit</button>
- -->
-    <div>
-      <input id="email" class="email" name="email" type="text" placeholder="Email Address">
-    </div>
-    
-    <div>
-      <!-- <img src="images/icon-arrow.svg alt="arrow"> not working-->
-      <button type="submit" id="submit">submit</button>
-    </div>
-  </form>
-
-  <!-- Form validation Error Message -->
-  <div id="error"></div>
-</div>
+    <!-- Form validation Error Message -->
+    <div id="error"></div>
+  </div> <!-- container -->
 
   <footer>
     <p class="attribution">
