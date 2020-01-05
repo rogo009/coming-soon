@@ -1,4 +1,19 @@
-/*font-family: 'Josefin Sans', sans-serif;*/
+/*Base Rules*/
+* {
+	box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+	margin: 0px;
+}
+
+.logo {
+	margin: 30px;
+	width: 21%;
+}
+
+/*Media Query*/
 
 .hero-desk {
 	display: none;
