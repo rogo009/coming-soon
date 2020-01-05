@@ -11,6 +11,7 @@
   <script></script>
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
+  <script defer src="script.js"></script>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -25,15 +26,37 @@
   <p>Hello fellow shoppers! We're currently building our new fashion store. 
   Add your email below to stay up-to-date with announcements and our launch deals.</p>
 
-  <input type="text" id="email" placeholder="Email Address">
-  <button id="submitButton">></button>
+  <form id="form" action="#" method="GET"> <!-- default values but to be explicit -->
+<!--     <div>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text"> adding 'required' after type means browser handles empty inputs for you, no need for JS to validate, works in this case as you are checking for a single condition, but if checking multiple conditions this would not work
+    </div> -->
+
+    <!-- <div>
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password">
+    </div>
+
+    <button type="submit">Submit</button>
+ -->
+    <div>
+      <input id="email" name="email" type="text" placeholder="Email Address">
+    </div>
+    
+    <div>
+      <button type="submit" id="submit">></button>
+    </div>
+  </form>
+
+  <div id="error"></div>
   
+
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
-  <script src="script.js"></script>
+  
 </body>
 </html>
