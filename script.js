@@ -57,6 +57,7 @@
 const email = document.getElementById('email')
 const form = document.getElementById('form')
 const errorElement = document.getElementById('error')
+const button = document.getElementById('submit');
 
 form.addEventListener('submit', (e) => {
 	let messages = []
@@ -70,6 +71,20 @@ form.addEventListener('submit', (e) => {
 	}
 })
 
+// button.addEventListener('click', () => {
+// 	input.style.border = '1.5px red solid';
+//   });
+
+button.addEventListener('click', () => {
+
+});
+
+// function validate() {
+// 	let message = []
+// 	if (email.value === '' || email.value == null) {
+// 		messages.push('Please provide a valid email')
+// 	}
+// }
 
 
 
