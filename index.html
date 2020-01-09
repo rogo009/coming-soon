@@ -18,28 +18,39 @@
 </head>
 
   <body>
-        <img src="images/logo.svg" alt="base apparel logo" class="logo">
+
+    
+  <div class="container-grid-parent">
+
+    <div>
+      <img src="images/logo.svg" alt="base apparel logo" class="logo">
+    </div>
+
     <div class="container">
-        <img src="images/hero-mobile.jpg" alt="main image" class="hero-img-mob">
-    <div class="flexbox">    
-        <img src="images/hero-desktop.jpg" alt="main image" class="hero-desk">
-      <div class="container-text">  
-        <h1 class="hero-text">WE'RE</h1> 
+
+    <div class="hero-imgs">
+      <img src="images/hero-mobile.jpg" alt="main image" class="hero-img-mob">
+      <img src="images/hero-desktop.jpg" alt="main image" class="hero-desk">
+    </div>
+        
+    <div class="container-text">
+        <h1 class="hero-text">WE'RE</h1>
         <h1 class="tag-text">COMING SOON</h1>
-          <p class="tagline">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
-      </div> <!-- container for text -->
-    </div> <!-- container for flexbox   -->
-
+        <p class="tagline">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      
       <form id="form" action="#" method="GET"> <!-- default values but to be explicit -->
-        <div class="email">
-          <input id="email" name="email" type="text" placeholder="Email Address">
-          <button type="submit" id="submit">></button>
-        </div>
+        
+      <div class="email">
+        <input id="email" name="email" type="text" placeholder="Email Address">
+        <button type="submit" id="submit">></button>
+      </div>
         <!-- Form validation Error Message -->
-        <div id="error"></div>
+      <div id="error"></div>
       </form>
+    </div> <!-- container for text -->
+    </div> <!-- all divs parent container -->
 
-    </div> <!-- container -->
+  </div>
 
     <footer>
       <p class="attribution">
