@@ -17,4 +17,3 @@ form.addEventListener('submit', (e) => {
 		email.style.border = '1.5px red solid';
 	}
 })
-

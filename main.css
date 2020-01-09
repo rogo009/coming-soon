@@ -72,22 +72,6 @@ button {
 	font-size: 1.2em;
 }
 
-/* input[type="text"] {
-    width: 200px;
-    height: 20px;
-    padding-right: 50px;
-}*/
-
-/* input[type="submit"] {
-    margin-left: -50px;
-    height: 25px;
-    width: 50px;
-    background: blue;
-    color: white;
-    border: 0;
-    -webkit-appearance: none;
-} */
-
 #error {
 	color: red;
 	margin: 0px;
@@ -101,6 +85,38 @@ footer {
 
 /*Media Query*/
 
-.hero-desk {
-	display: none;
+@media screen and (min-width: 800px) {
+
+	.hero-img-mob {
+		display: none
+	}
+}
+
+@media screen and (max-width: 799px) {
+
+	.hero-desk {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	
+	.logo {
+		max-width: 100px;
+	}
+
+	.flexbox {
+		display: flex;
+		align-items: center;
+		border: 1px solid red;
+	}
+
+	.hero-desk {
+		order: 2;
+	}
+
+	.container-text {
+		order: -1;
+	}
+
 }
