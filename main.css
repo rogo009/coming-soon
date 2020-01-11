@@ -44,8 +44,8 @@ p {
 }
 
 .email {
-	/* color: hsl(0, 93%, 68%); */
-	/* border: 1px solid red; */
+	/* color: hsl(0, 93%, 68%);
+	border: 1px solid red; */
 	padding: 10px;
 	margin: 0px 30px 5px 30px;
 }
@@ -104,9 +104,25 @@ footer {
 
 @media screen and (min-width: 800px) {
 	
+	body {
+		margin: 0px;
+		background-image: url(images/bg-pattern-desktop.svg);
+		background-repeat: cover;
+		/* background-position: left bottom; */
+		/* background-attachment: fixed; */
+	}
+
+	/* Reset, delete later */
+	.tagline,
+	.email {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	/* CSS GRID Layout */
 	.container-grid-parent {
 		display: grid;
-		grid-template-columns: 1fr 2fr;
+		grid-template-columns: 2fr 1fr;
 		align-items: start;
 	}
 
@@ -124,15 +140,51 @@ footer {
 		grid-row: 2;
 	}
 
+	/* Styling */
 	.logo {
+		margin: 65px 0px 0px 150px;
+		max-width: 15%;
+	}
 
+	.container-text {
+		text-align: left;
+		margin: 0px 0px 0px 150px;
+		padding-right: 200px;
+	}
+
+	.hero-text,
+	.tag-text {
+		font-size: 3em;
+	}
+
+	.tag-text{
+		margin-bottom: .5em;
+	}
+
+	.tagline {
+		margin-bottom: 1.5em;
+	}
+
+	input {
+		width: 78%;
+	}
+
+	button {
+		width: 18%;
+	}
+
+	#error {
+		color: red;
+		margin-top: 10px;
+		padding: 10px;
+		font-size: 1em;
 	}
 
 	.hero-imgs {
 		text-align: right;
 	}
 
-	.container-grid-parent > div {
-
+	footer {
+		display: none;
 	}
 }
