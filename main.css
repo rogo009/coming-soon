@@ -16,7 +16,8 @@ h1 {
 	letter-spacing: .3em;
 }
 
-.container {
+.hero-imgs,
+.container-text {
 	text-align: center;
 }
 
@@ -104,14 +105,21 @@ footer {
 @media screen and (min-width: 800px) {
 	
 	.container-grid-parent {
-		border: 1px solid red;
+		border: 1px solid blue;
 		display: grid;
-		grid-template-columns: 500px 500px;
+		grid-template-columns: 30% 70%;
 	}
 
 	.logo {
-		max-width: 120px;
-		border: 1px solid red;
+		/* max-width: 120px; */
+		border: 1px solid rgb(22, 20, 20);
 	}
 
+	.hero-desk {
+		/* display: 50%%; */
+	}
+
+	.container-grid-parent > div {
+		border: 1px solid red;
+	}
 }
