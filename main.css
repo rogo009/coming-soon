@@ -6,14 +6,14 @@
 
 body,
 input {
-	margin: 0px;
-	background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));	
+	background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+	margin: 0px;	
 }
 
 h1 {
-	margin: 0px 0px 10px 0px;
 	font-size: 2.2em;
 	letter-spacing: .3em;
+	margin: 0px 0px 10px 0px;
 }
 
 .hero-imgs,
@@ -32,31 +32,31 @@ p {
 }
 
 .hero-img-mob {
-	object-fit: contain;
 	margin-bottom: 2em;
+	object-fit: contain;
 }
 
 .tagline {
-	margin: 25px 37px 25px 37px;
 	font-weight: 100;
-	line-height: 1.6em;
 	letter-spacing: .01em;
+	line-height: 1.6em;
+	margin: 25px 37px 25px 37px;
 }
 
 .email {
 	/* color: hsl(0, 93%, 68%);
 	border: 1px solid red; */
-	padding: 10px;
 	margin: 0px 30px 5px 30px;
+	padding: 10px;
 }
 
 input {
 	border: 1px solid hsl(0, 36%, 90%);
 	border-radius: 22px;
+	height: 45px;
 	padding: 15px 15px 15px 20px;
 	text-align: left;
 	width: 225px;
-	height: 45px;
 }
 
 ::placeholder {
@@ -64,21 +64,21 @@ input {
 }
 
 button {
-	background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)) ;
-	padding: 10px 20px;
+	background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 	border: 0;
 	border-radius: 20px;
 	color: white;
-	width: 55px;
-	height: 44px;
 	font-size: 1.2em;
+	height: 44px;
+	padding: 10px 20px;
+	width: 55px;
 }
 
 #error {
 	color: red;
+	font-size: .8em;
 	margin: 0px;
 	padding: 10px;
-	font-size: .8em;
 }
 
 footer {
@@ -121,9 +121,9 @@ footer {
 
 	/* CSS GRID Layout */
 	.container-grid-parent {
+		align-items: start;
 		display: grid;
 		grid-template-columns: 2fr 1fr;
-		align-items: start;
 	}
 
 	.box1 {
@@ -147,9 +147,9 @@ footer {
 	}
 
 	.container-text {
-		text-align: left;
 		margin: 0px 0px 0px 150px;
 		padding-right: 200px;
+		text-align: left;
 	}
 
 	.hero-text,
@@ -174,8 +174,8 @@ footer {
 	}
 
 	#error {
-		margin-top: 10px;
 		font-size: 1em;
+		margin-top: 10px;
 	}
 
 	.hero-imgs {
